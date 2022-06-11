@@ -7,9 +7,4 @@ class Solution {
         return uniq;
 
     }
-
-    public static void main(String[] args) {
-        int result = Solution.singleNumber({1, 2, 3, 2, 1});
-        System.out.println();
-    }
 }
