@@ -1,0 +1,25 @@
+public class Solution {
+    public void duplicateZeros(int[] arr) {
+        int[] dupli = arr.clone();
+        int i=0;
+        int j=0;
+        for(i=0;i<dupli.length && j<dupli.length;i++){
+            arr[j]=dupli[i];
+            if(dupli[i]==0 && j<dupli.length-1){
+                j+=1;
+                arr[j]=0;
+            }
+            if (j<dupli.length-1){
+                j++;
+            }
+            else {
+                break;
+            }
+
+        }
+
+
+
+
+    }
+}
